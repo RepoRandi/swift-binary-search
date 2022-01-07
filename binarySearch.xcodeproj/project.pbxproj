@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2404286A2787EBB500A9A01E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240428692787EBB500A9A01E /* main.swift */; };
+		240428722787EBC100A9A01E /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 240428712787EBC100A9A01E /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240428722787EBC100A9A01E /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = binarySearch;
+			packageProductDependencies = (
+				240428712787EBC100A9A01E /* Algorithms */,
+			);
 			productName = binarySearch;
 			productReference = 240428662787EBB500A9A01E /* binarySearch */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = 2404285D2787EBB500A9A01E;
+			packageReferences = (
+				240428702787EBC100A9A01E /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 240428672787EBB500A9A01E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,6 +294,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		240428702787EBC100A9A01E /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		240428712787EBC100A9A01E /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 240428702787EBC100A9A01E /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2404285E2787EBB500A9A01E /* Project object */;
 }
